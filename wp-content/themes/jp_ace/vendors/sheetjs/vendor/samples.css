@@ -1,0 +1,20 @@
+.state-loaded {
+  display: none;
+}
+
+.show-source {
+  background-color: #8fbb6d;
+}
+
+.show-source:hover {
+  background-color: #76bb4c;
+}
+
+.show-source:before {
+  content: 'Show source code';
+}
+
+.show-source.shown:before {
+  content: 'Hide source code';
+}
+
