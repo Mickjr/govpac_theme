@@ -2,7 +2,7 @@
     ========================================
     Dodolan Manuk - Catalog Themes
     ========================================
-    
+
     @author         : Afriq Yasin Ramadhan
     @version        : v1.1
     @date-create    : 6/1/2013
@@ -20,7 +20,20 @@
         padding: 80px 0px 30px;
         height: 450px;
     }
-    
+
+    .nav-right{
+		margin-top: -15px;
+		}
+
+	.test {
+		position: absolute;
+	    left: 38%;
+	    margin-top: -60px;
+	    clear: fix;
+	    margin-left: -40px !important;  /* 50% of your logo width */
+	    display: block;
+	}
+
 }
 
 @media screen and (min-width:769px) and (max-width:991px) {
@@ -28,9 +41,9 @@
         margin-top:0px;
     }
 
-    /*.nav-right{
-        margin-top: -100px;
-    }*/
+    .nav-right{
+		margin-top: 1px;
+		}
 
     #home-slider .item {
         padding:80px 0px 30px;
@@ -52,16 +65,12 @@
         padding: 0px;
         margin:0;
     }
-    
+
     .navbar .nav-right{
         margin-left: 0px;
         margin-top: 1px;
     }
 
- /*   .nav-right{
-        margin-top: -100px;
-    }*/
-  
     .navbar .btn-navbar {
         margin-top: 18px;
         margin-right: 20px;
@@ -74,13 +83,13 @@
         -moz-box-shadow: none;
           box-shadow: none;
     }
-    
+
     .navbar .btn-navbar:hover,
     .navbar .btn-navbar:focus,
     .navbar .btn-navbar:active{
         background: #4e6d8d;
     }
-    
+
     .navbar .btn-navbar .icon-bar {
         background-color: #ffffff;
         -webkit-border-radius: 1px;
@@ -90,11 +99,11 @@
         -moz-box-shadow: none;
         box-shadow: none;
     }
-    
+
     .navbar-collapse .dropdown-menu a{
         font-weight: 600;
     }
-    
+
     .navbar-collapse .dropdown-menu a:hover {
         font-weight: 600;
         background: #eff0f2;
@@ -132,7 +141,7 @@
     .navbar-collapse .dropdown-menu .sub-menu:after {
        display: none;
     }
-    
+
     .blog .the-calendar:before{
         content: '';
         position: absolute;
@@ -149,7 +158,7 @@
         bottom: -20px;
         margin-left: -10px;
     }
-    
+
     .navbar .nav-left{
         float: left;
     }
@@ -164,7 +173,7 @@
     .navbar-default .navbar-toggle{
         margin-top: 12px;
     }
-    
+
     .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
         background-color: #4e6d8d;
     }
@@ -230,11 +239,11 @@
         margin-top: -60px;
         margin-left: -22px !important;
     }
-    
+
     .navbar .btn-navbar {
         margin-right: 20px;
     }
-    
+
     .navbar .btn-navbar {
         margin-top: 18px;
         margin-right: 20px;
@@ -247,13 +256,13 @@
         -moz-box-shadow: none;
           box-shadow: none;
     }
-    
+
     .navbar .btn-navbar:hover,
     .navbar .btn-navbar:focus,
     .navbar .btn-navbar:active{
         background: #4e6d8d;
     }
-    
+
     .navbar .btn-navbar .icon-bar {
         background-color: #ffffff;
         -webkit-border-radius: 1px;
@@ -292,7 +301,7 @@
     #featured .featured-container{
         margin-bottom: 30px;
     }
-    
+
     #catalogue .thumbnail .caption-img{
         height: auto;
         min-height: 280px;
@@ -318,11 +327,11 @@
         margin-top: -60px;
         margin-left: -40px !important;
     }
-    
+
     .navbar .btn-navbar {
         margin-right: 20px;
     }
-    
+
     .navbar .btn-navbar {
         margin-top: 18px;
         margin-right: 20px;
@@ -335,13 +344,13 @@
         -moz-box-shadow: none;
           box-shadow: none;
     }
-    
+
     .navbar .btn-navbar:hover,
     .navbar .btn-navbar:focus,
     .navbar .btn-navbar:active{
         background: #4e6d8d;
     }
-    
+
     .navbar .btn-navbar .icon-bar {
         background-color: #ffffff;
         -webkit-border-radius: 1px;

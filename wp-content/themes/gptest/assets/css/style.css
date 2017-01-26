@@ -542,6 +542,48 @@ blockquote {
 	margin-top: 2px;
 }
 
+.navbar {
+ -webkit-box-shadow: 2px 2px 4px 4px #000000;
+ -moz-box-shadow: 2px 2px 4px 4px #000000;
+ box-shadow: 2px 2px 4px 4px #000000;
+ color: #000000;
+ min-height: 100px;
+ opacity: 0.8;
+ padding: 2px;
+ }
+
+ .thumbnail {
+ -webkit-box-shadow: 2px 2px 4px 4px #b1b0b0;
+ -moz-box-shadow: 2px 2px 4px 4px #b1b0b0;
+ box-shadow: 2px 2px 4px 4px #b1b0b0;
+ }
+
+ .caption-details h3 {
+	 color: #282c7e;
+ }
+
+ .caption h5 {
+        color: #282c7e;
+}
+
+.caption ul {
+        color: #282c7e;
+    }
+
+
+ .test {
+	 position: absolute;
+	 left: 42%;
+	 margin-top: -60px;
+	 clear: fix;
+	 margin-left: -45px !important;  /* 50% of your logo width */
+	 display: block;
+ }
+
+ .nav-right{
+	 margin-top: -20px;
+ }
+
 
 /*
 	==================
@@ -843,7 +885,7 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
 /*
 	==================
-	[5. TAGLINE]
+	[5. TAGLINE / BLOG]
 	==================
 */
 #tagline{
@@ -857,9 +899,8 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 	font-weight: 600;
 	text-transform: uppercase;
 	font-size: 24px;
-	color: #444444;
+	color: #282c7e;
 }
-
 
 /*
 	==================
@@ -1018,7 +1059,7 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 	font-family: 'Open Sans', arial, sans-serif;
 	font-size: 14px;
 	line-height: 16px;
-	color: #0d2231;
+	color: #282c7e;
 	text-align: center;
 	text-transform: capitalize;
 }
@@ -1175,7 +1216,7 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 	font-weight: 600;
 	text-transform: uppercase;
 	text-align: center;
-	color: #444444;
+	color: #282c7e;
 }
 
 #blog .blog-container{
@@ -1671,6 +1712,10 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 	text-transform: uppercase;
 	font-weight: 600;
 }
+
+.page-content p{
+        color: #282c7e;
+    }
 
 
 /*
