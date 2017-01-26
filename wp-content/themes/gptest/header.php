@@ -27,13 +27,11 @@
     <meta name="twitter:image" content="http://govpac.com/img/img04.png"/>
     <meta name="twitter:url" content="http://govpac.com/index.html"/>
 
-	<!-- Favicon -->
+	<!-- Favicon -->											<!-- /assets/img/ico-logo.png"> -->
 	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/assets/img/favicon.ico">
 
-	<!-- bootstrap & fontawesome -->
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/font-awesome/4.2.0/css/font-awesome.min.css" />
 
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/chosen.min.css" />
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/datepicker.min.css" />
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/vendors/alertify/alertify.css" />
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap.css" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/responsive.css" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css" />
