@@ -1,49 +1,39 @@
-<?php
-/**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package govpac
- */
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
+
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<?php wp_head(); ?>
-</head>
+	<!-- Seo Meta for Facebook and Twitter-->
+	<!-- Facebook -->
+    <meta name="description" content="The current source for your government consulting needs."/>
+    <meta name="keywords" content="social, military, twitter, facebook, media, linkedin, instagram, unlimited, consultant, news, property, government, contractor, certification"/>
+    <meta property="fb:app_id" content="290969614437361"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Government Property Accountability Consultants Website"/>
+    <meta name="description" content="The current source for government consulting needs."/>
+    <meta property="og:image" content="http://govpac.com/img/img04.png"/>
+    <meta property="og:site_name" content="govpac"/>
+    <meta property="og:url" content="http://govpac.com/index.html"/>
+	<!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@govpac"/>
+    <meta name="twitter:title" content="Government Property Accountability Consultants Website"/>
+    <meta name="description" content="The current source for your government consulting needs."/>
+    <meta name="twitter:image" content="http://govpac.com/img/img04.png"/>
+    <meta name="twitter:url" content="http://govpac.com/index.html"/>
 
-<body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'govpac' ); ?></a>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/assets/img/favicon.png">
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
+	<!-- bootstrap & fontawesome -->
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/font-awesome/4.2.0/css/font-awesome.min.css" />
 
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'govpac' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/chosen.min.css" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/datepicker.min.css" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/vendors/alertify/alertify.css" />
