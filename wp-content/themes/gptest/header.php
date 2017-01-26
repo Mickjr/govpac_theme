@@ -28,7 +28,7 @@
     <meta name="twitter:url" content="http://govpac.com/index.html"/>
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/assets/img/favicon.png">
+	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/assets/img/favicon.ico">
 
 	<!-- bootstrap & fontawesome -->
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap.min.css" />
