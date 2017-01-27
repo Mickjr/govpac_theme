@@ -14,13 +14,26 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'govpac' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'govpac' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'govpac' ), 'govpac', '<a href="https://automattic.com/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
+	<div id="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<small>Copyright &copy; 2017 - Government Property Accountability Consultants</small>
+				</div>
+			</div>
+		</div>
+	</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+
+<script src="<?php bloginfo('template_url'); ?>/js/jquery.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/bootstrap.js"></script>
+	<!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script> -->
+<!--
+<script src="<?php bloginfo('template_url'); ?>/js/gmap3.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
+-->
+
 
 <?php wp_footer(); ?>
 

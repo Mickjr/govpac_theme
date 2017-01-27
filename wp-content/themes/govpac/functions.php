@@ -98,6 +98,47 @@ function govpac_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	
+	register_sidebar( array(
+		'name'			=> esc_html__( 'Slider', 'govpac' ),
+		'id'			=> 'slider',
+		'description'	=> esc_html__( 'Add Widget slider here', 'govpac' ),
+		'before_widget'	=> '',
+		'after_widget'	=> '',
+		'before_title'	=> '',
+		'after_title'	=> '',
+	) );
+
+	register_sidebar( array(
+		'name'			=> esc_html__( 'Testimonials', 'govpac' ),
+		'id'			=> 'testimonials',
+		'description'	=> esc_html__( 'Add Testimonials Widget here', 'govpac' ),
+		'before_widget'	=> '',
+		'after_widget'	=> '',
+		'before_title'	=> '',
+		'after_title'	=> '',
+	) );
+
+	register_sidebar( array(
+		'name'			=> esc_html__( 'Home Posts', 'govpac' ),
+		'id'			=> 'home_posts',
+		'description'	=> esc_html__( 'Add Posts Widget here', 'govpac' ),
+		'before_widget'	=> '',
+		'after_widget'	=> '',
+		'before_title'	=> '',
+		'after_title'	=> '',
+	) );
+
+	register_sidebar( array(
+		'name'			=> esc_html__( 'Footer Menu', 'govpac' ),
+		'id'			=> 'footer_menu',
+		'description'	=> esc_html__( 'Add Menu Widget here', 'govpac' ),
+		'before_widget'	=> '',
+		'after_widget'	=> '',
+		'before_title'	=> '',
+		'after_title'	=> '',
+	) );
+
 }
 add_action( 'widgets_init', 'govpac_widgets_init' );
 
@@ -141,3 +182,30 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+/*
+ * Helper function to return the theme option value. If no value has been saved, it returns $default.
+ * Needed because options are saved as serialized strings.
+ *
+ */
+
+if ( !function_exists( 'of_get_option' ) ) {
+	function of_get_option($name, $default = false) {
+	
+		$optionsframework_settings = get_option('optionsframework');
+	
+		// Gets the unique option id
+		$option_name = $optionsframework_settings['id'];
+	
+		if ( get_option($option_name) ) {
+			$options = get_option($option_name);
+		}
+	
+		if ( isset($options[$name]) ) {
+			return $options[$name];
+		} else {
+			return $default;
+		}
+	}
+}

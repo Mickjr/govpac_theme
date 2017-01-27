@@ -39,6 +39,7 @@
 	[20. PRICING]
 	[21. FOOTER]
 	[22. COPYRIGHT]
+	[23. TESTIMONIALS]
 
 */
 
@@ -118,6 +119,7 @@ a:hover{
 .btn.btn-black:hover, .btn.btn-black:focus {
     background-color: #212834;
     border-color: #212834;
+    color: #ffffff;
 }
 
 .btn.btn-black:active, .btn.btn-black.active {
@@ -404,6 +406,27 @@ blockquote {
 	-moz-box-shadow: none;
 	box-shadow: none;
 }
+
+li.current-menu-item > a,
+li.current-menu-item > a:hover,
+li.current-menu-item > a:focus,
+li.current-menu-item > a:visited {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #282c7e;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	
+}
+
+#menu-mainmenu {
+	width: 100%;
+}
+
 
 .navbar-default .navbar-nav li.dropdown.open > .dropdown-toggle,
 .navbar-default .navbar-nav li.dropdown.active > .dropdown-toggle,
@@ -860,6 +883,19 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 	color: #444444;
 }
 
+#tagline {
+    background: #f5f5f5 none repeat scroll 0 0;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+}
+
+#tagline h2 {
+	color: #282c7e;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
 /*
 	==================
@@ -2459,3 +2495,26 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 	text-align: center;
 	color: #ffffff;
 }
+
+/*
+	==================
+	[23. TESTIMONIALS]
+	==================
+*/
+.sp-testimonial-section {
+	color: #ffffff;
+}
+.sp-testimonial-section h2 {
+	font-size: 15px !important;
+	color: #ffffff !important;
+	font-style: italic !important;
+	font-weight: 600 !important;
+	text-transform: capitalize !important;
+}
+.sp-testimonial-section h2::before {
+	content: "-- ";
+}
+.sp-testimonial-section h2::after {
+	content: "-- ";
+}
+
