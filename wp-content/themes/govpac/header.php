@@ -110,7 +110,7 @@
         </div>
 		<a href="#" class="test visible-lg visible-md"><img src="/wp-content/uploads/2017/01/logo7.png" alt="Government Property Accountability Consultants"></a>
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
 <!--
         	<ul class="nav navbar-nav nav-left">
 			  <li class="active"><a href="index.html">Home</a></li>
@@ -128,9 +128,10 @@
 			<?php 
 				wp_nav_menu(
 					array(
-						'menu'    		=> 'primary',
-						'container'     => '',
-						'menu_class'    => 'nav navbar-nav nav-left',
+						'theme_location'	=> 'menu-1',
+						'container'     	=> '',
+						'menu_class'    	=> 'nav navbar-nav nav-left',
+						'container'			=> ''
 					)
 				);
 			 ?>

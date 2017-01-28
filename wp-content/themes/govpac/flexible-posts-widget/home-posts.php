@@ -14,8 +14,8 @@ if ( !empty($title) )
 	echo '<div class="row">';
 		echo '<div class="col-md-12">';
 			echo '<div class="heading-title">';
-					echo '<h2>' .$title. '</h2>';
-					echo '<p>We are a virtual medium through which various types of skills can be acquired and/or utilized.</p>';
+					echo '<h2>' .of_get_option('blog_header',''). '</h2>';
+					echo '<h4>'.of_get_option('blog_description','').'</h4>';
 			echo '</div>';
 		echo '</div>';
 	echo '</div>';
@@ -25,13 +25,30 @@ if ( !empty($title) )
 	if( $flexible_posts->have_posts() ):
 	?>
 		<div class="row">
+			
+		<?php $pass = 1 ?>
+		
 		<?php while( $flexible_posts->have_posts() ) : $flexible_posts->the_post(); global $post; ?>
 		
 			<div class="col-md-4 col-sm-4">
 				<div class="blog-container" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 					<div class="blog-date">
-						<i class="fa fa-bar-chart-o"></i>
+						<?php
+							switch ($pass)
+							{
+								case 1:
+									echo '<i class="fa fa-bar-chart-o"></i>';
+									break;
+								case 2:
+									echo '<i class="fa fa-fighter-jet"></i>';
+									break;
+								case 3:
+									echo '<i class="fa fa-wrench"></i>';
+									break;
+							}
+							$pass = $pass + 1;
+						?>
 						<?php $day = get_the_date(); ?>
 						<!-- <span class="meta-date">26</span>
 						<span class="meta-month-year">MAR 2014</span> -->

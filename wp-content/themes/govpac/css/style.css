@@ -2459,7 +2459,7 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 	background: #B9C6D0;
 }
 
-#footer .sitemap > *{
+#footer .sitemap > * {
 	margin-left: auto;
 	margin-right: auto;
 	display: table;

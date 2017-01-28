@@ -1,0 +1,75 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: 2017-01-28 16:18:13
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.1.28
+WORDPRESS:	4.7.1
+PHP INFO:	5.6.10 | SAPI: cgi-fcgi
+SERVER:		Apache 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 2048M (128M default) 
+MEMORY STACK: 23MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported 
+TABLES: total:13 | filtered:0 | create:13 
+FILTERED: [] 
+SQL CREATED: 20170121_govpac_588cc44035a251321170128161808_database.sql 
+SQL FILE SIZE: 282.96KB (289748) 
+SQL FILE TIME: 2017-01-28 16:18:13 
+SQL RUNTIME: 0.06 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  /Applications/MAMP/htdocs/govpac_theme 
+ARCHIVE FILE: 20170121_govpac_588cc44035a251321170128161808_archive.zip 
+FILTERS: *ON* 
+DIRS: /Applications/MAMP/htdocs/govpac_theme/.git 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	99.92MB 
+STATS:	Dirs 682 | Files 5,090 
+SQL ADDED: 20170121_govpac_588cc44035a251321170128161808_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 5772
+    [filename] => /Applications/MAMP/htdocs/govpac_theme/wp-snapshots/tmp/20170121_govpac_588cc44035a251321170128161808_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 54.93MB 
+ARCHIVE RUNTIME: 16.55 sec. 
+MEMORY STACK: 25.25MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+Template parsed with new data 
+Complete [/Applications/MAMP/htdocs/govpac_theme/wp-snapshots/tmp/20170121_govpac_588cc44035a251321170128161808_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 282.96KB 
+Installer File: 352.36KB 
+Archive File: 54.93MB  
+
+********************************************************************************
+RECORD ID:[2]
+TOTAL PROCESS RUNTIME: 17.86 sec.
+PEAK PHP MEMORY USED: 27.25MB
+DONE PROCESSING => 20170121_govpac 2017-01-28 16:18:31
+ 

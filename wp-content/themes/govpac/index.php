@@ -20,6 +20,7 @@ get_header(); ?>
 		<?php
 		if ( have_posts() ) :
 
+/*
 			if ( is_home() && ! is_front_page() ) : ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
@@ -27,9 +28,26 @@ get_header(); ?>
 
 			<?php
 			endif;
+*/
 
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
+
+				$img = get_the_post_thumbnail_url( $_post->ID, 'full' ); ?>
+
+				<!-- begin:heading -->
+				<div class="heads" style="background: url('<?php echo $img ?>') center center;">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<h2><?php the_title(); ?></h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end:heading -->
+
+				<?php
 
 				/*
 				 * Include the Post-Format-specific template for the content.
@@ -52,5 +70,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();

@@ -110,7 +110,7 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'name' => __('welcome_header', 'options_check'),
-		'desc' => __('Enter the Welcome Header Test', 'options_check'),
+		'desc' => __('Enter the Welcome Header', 'options_check'),
 		'id' => 'welcome_header',
 		'std' => 'Welcome to our site',
 		'type' => 'text');
@@ -121,6 +121,19 @@ function optionsframework_options() {
 		'desc' => __('Enter Text for the Welcome Area', 'options_check'),
 		'id' => 'welcome_content',
 		'std' => 'This is the small (normal) font text',
+		'type' => 'textarea');
+
+	$options[] = array(
+		'name' => __('Blog Header', 'options_check'),
+		'desc' => __('Enter the Blog Header', 'options_check'),
+		'id' => 'blog_header',
+		'type' => 'text');
+
+
+	$options[] = array(
+		'name' => __('Blog Description', 'options_check'),
+		'desc' => __('Enter Text for the Blog Description', 'options_check'),
+		'id' => 'blog_description',
 		'type' => 'textarea');
 
 	$options[] = array(

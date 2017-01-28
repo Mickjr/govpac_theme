@@ -94,7 +94,7 @@ get_header(); ?>
 							<li>
 								<a 	href="<?php echo $fb_link; ?>" rel="tooltip" 
 									title="<?php echo $fb_title; ?>" 
-									class="<?php echo $fb_class; ?>"><span><i class="<?php $fb_icon; ?>"></i></span></a>
+									class="<?php echo $fb_class; ?>"><span><i class="<?php echo $fb_icon; ?>"></i></span></a>
 								</li>
 						<?php } ?>
 
@@ -107,7 +107,7 @@ get_header(); ?>
 							<li>
 								<a 	href="<?php echo $tw_link; ?>" rel="tooltip" 
 									title="<?php echo $tw_title; ?>" 
-									class="<?php echo $tw_class; ?>"><span><i class="<?php $tw_icon; ?>"></i></span></a>
+									class="<?php echo $tw_class; ?>"><span><i class="<?php echo $tw_icon; ?>"></i></span></a>
 								</li>
 						<?php } ?>
 
@@ -120,7 +120,7 @@ get_header(); ?>
 							<li>
 								<a 	href="<?php echo $lk_link; ?>" rel="tooltip" 
 									title="<?php echo $lk_title; ?>" 
-									class="<?php echo $lk_class; ?>"><span><i class="<?php $lk_icon; ?>"></i></span></a>
+									class="<?php echo $lk_class; ?>"><span><i class="<?php echo $lk_icon; ?>"></i></span></a>
 								</li>
 						<?php } ?>
 
@@ -133,7 +133,7 @@ get_header(); ?>
 							<li>
 								<a 	href="<?php echo $ig_link; ?>" rel="tooltip" 
 									title="<?php echo $ig_title; ?>" 
-									class="<?php echo $ig_class; ?>"><span><i class="<?php $ig_icon; ?>"></i></span></a>
+									class="<?php echo $ig_class; ?>"><span><i class="<?php echo $ig_icon; ?>"></i></span></a>
 								</li>
 						<?php } ?>
 
@@ -154,7 +154,15 @@ get_header(); ?>
 
 					<div class="sitemap">
 						
-						<?php dynamic_sidebar( 'footer_menu' ); ?>
+						<?php 
+							wp_nav_menu(
+								array(
+									'theme_location'	=> 'menu-2',
+									'container'     	=> '',
+									'menu_class'    	=> '',
+								)
+							);
+						 ?>
 						
 					</div>
 				</div>

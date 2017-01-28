@@ -45,6 +45,7 @@ function govpac_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'menu-1' => esc_html__( 'Primary', 'govpac' ),
+		'menu-2' => esc_html__( 'Secondary', 'govpac' ),
 	) );
 
 	/*
@@ -129,15 +130,7 @@ function govpac_widgets_init() {
 		'after_title'	=> '',
 	) );
 
-	register_sidebar( array(
-		'name'			=> esc_html__( 'Footer Menu', 'govpac' ),
-		'id'			=> 'footer_menu',
-		'description'	=> esc_html__( 'Add Menu Widget here', 'govpac' ),
-		'before_widget'	=> '',
-		'after_widget'	=> '',
-		'before_title'	=> '',
-		'after_title'	=> '',
-	) );
+
 
 }
 add_action( 'widgets_init', 'govpac_widgets_init' );
@@ -208,4 +201,10 @@ if ( !function_exists( 'of_get_option' ) ) {
 			return $default;
 		}
 	}
+}
+
+add_filter('wp_nav_menu_args', 'prefix_nav_menu_args');
+function prefix_nav_menu_args($args = ''){
+    $args['container'] = false;
+    return $args;
 }
